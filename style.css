@@ -1,22 +1,40 @@
+/* Import Tailwind CSS base settings, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Define global variables and site configurations */
 :root {
+  /* Set default font family and fallbacks */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+
+  /* Set default line height and font weight */
+  line-height: 1.5; 
   font-weight: 400;
 
+  /* Define the color scheme (light or dark depending on system settings) */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Set default text color */
+  color: rgba(255, 255, 255, 0.87); /* White with 87% opacity */
+
+  /* Set primary background color */
+  background-color: #242424; /* Dark gray */
+
+  /* Improve font rendering */
+  font-synthesis: none; /* Avoid font rendering alterations (bold/italic) */
+  text-rendering: optimizeLegibility; /* Ensure text legibility */
+  -webkit-font-smoothing: antialiased; /* Improve font smoothing in WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts for macOS systems */
 }
 
-/* bg-red-500	vermelho 
-bg-green-500	
-bg-sky-600	*/
+/* Style for selected seats */
+.selected {
+  background-color: #8A1C7C; /* Vibrant purple background */
+  border: 2px solid #FFA500; /* Orange border */
+}
+
+/* Style for occupied seats */
+.occupied {
+  background-color: #00C49A; /* Light green background */
+}

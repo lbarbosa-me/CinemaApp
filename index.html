@@ -2,31 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3318/3318660.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
-    <title>Bus App</title>
+    <title>Cinema App</title>
   </head>
   <body>
-    <header class="bg-red-900">
-      <img class="h-25 p-4" src="https://static.vecteezy.com/system/resources/thumbnails/013/787/601/small/tourist-coach-bus-icon-png.png" alt="brand img">
+    <header class="bg-red-600">
+      <img class="h-40 w-40 p-4 display-flex " src="https://cdn.freebiesupply.com/logos/large/2x/movie-city-logo-png-transparent.png" alt="brand img">
+      <h2 class="display-flex p-4 mb-2 mt-0 font-14 font-bold">Buy tickets:</h2>
     </header>
-      <main class="p-4">
-        <section id="escolha-assento-container">
-          <section id="escolher-assento">
-            <ul>
-              <li id="1" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">1</li>
-              <li id="2" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">2</li>
-              <li id="3" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">3</li>
-              <li id="4" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">4</li>
-              <li id="5" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">5</li>
-              <li id="6" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">6</li>
-              <li id="7" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">7</li>
-              <li id="8" onclick="selecionarAssento(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg">8</li>
-            </ul>
-          </section>
+    <main class="p-4 flex flex-col">
+      <section id="seat-selection-container" class="flex justify-around py-5">
+        <section id="seat-selection" class="flex">
+          <!-- Seat rows -->
+          <ul class="mr-6">
+            <li id="1" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">1</li>
+            <li id="2" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">2</li>
+            <li id="3" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">3</li>
+            <li id="4" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">4</li>
+            <li id="5" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">5</li>
+            <li id="6" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">6</li>
+            <li id="7" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">7</li>
+            <li id="8" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">8</li>
+            <li id="9" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">9</li>
+            <li id="10" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">10</li>
+          </ul>
+          <ul class="mr-6">
+            <li id="11" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">11</li>
+            <li id="12" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">12</li>
+            <li id="13" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">13</li>
+            <li id="14" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">14</li>
+            <li id="15" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">15</li>
+            <li id="16" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">16</li>
+            <li id="17" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">17</li>
+            <li id="18" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">18</li>
+            <li id="19" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">19</li>
+            <li id="20" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">20</li>
+          </ul>
+          <ul class="mr-6">
+            <li id="21" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">21</li>
+            <li id="22" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">22</li>
+            <li id="23" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">23</li>
+            <li id="24" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">24</li>
+            <li id="25" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">25</li>
+            <li id="26" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">26</li>
+            <li id="27" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">27</li>
+            <li id="28" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">28</li>
+            <li id="29" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">29</li>
+            <li id="30" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold 3rounded-t-lg hover:scale-125">30</li>
+          </ul>
+          <ul class="mr-6">
+            <li id="31" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">31</li>
+            <li id="32" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">32</li>
+            <li id="33" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">33</li>
+            <li id="34" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">34</li>
+            <li id="35" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">35</li>
+            <li id="36" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">36</li>
+            <li id="37" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">37</li>
+            <li id="38" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">38</li>
+            <li id="39" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">39</li>
+            <li id="40" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-46 font-bold rounded-t-lg hover:scale-125">40</li>
+          </ul>
+          <ul class="mr-6">
+            <li id="41" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">41</li>
+            <li id="42" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">42</li>
+            <li id="43" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">43</li>
+            <li id="44" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">44</li>
+            <li id="45" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">45</li>
+            <li id="46" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">46</li>
+            <li id="47" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">47</li>
+            <li id="48" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">48</li>
+            <li id="49" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">49</li>
+            <li id="50" onclick="handleSeatClick(this)" class="bg-sky-600 w-8 mb-2 text-center h-6 font-bold rounded-t-lg hover:scale-125">50</li>
+          </ul>
         </section>
-      </main>
-      <script src="./main.js"></script>
-      </body>
+        <div id="purchase-total-container">
+          <p>Total purchase amount:</p>
+          <p id="total-purchase-amount" class="font-bold text-xl">R$ 0,00</p>
+        </div>
+      </section>
+      <button id="finalize-purchase" class="bg-red-900 hover:bg-red-600 p-3 rounded-lg mt-5" onclick="finalizePurchase()">Finalize Purchase</button>
+    </main>
+    <script src="./main.js"></script>
+  </body>
 </html>
